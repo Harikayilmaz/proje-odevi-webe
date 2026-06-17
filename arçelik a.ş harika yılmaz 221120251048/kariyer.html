@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arçelik A.Ş. | Kariyer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+<div class="warning">
+    Bu site Web Tasarım dersi kapsamında yapılmıştır ve sitedeki bilgilerin geçerliliği yoktur.
+</div>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo"> <i class="fa-solid fa-house"></i> ARÇELİK </div>
+
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="urunler.html">Ürünler</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="kurumsal.html">Kurumsal</a></li>
+            <li><a href="kampanyalar.html">Kampanyalar</a></li>
+            <li><a href="kariyer.html">Kariyer</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Kariyer</h1>
+        <p>Geleceği birlikte şekillendirecek yetenekleri arıyoruz</p>
+    </div>
+</section>
+
+<div class="container">
+
+    <h2>Neden Arçelik?</h2>
+
+    <p>
+        Arçelik, çalışanlarının gelişimine önem veren, yenilikçi ve teknoloji odaklı
+        bir çalışma ortamı sunmaktadır.
+    </p>
+
+    <br>
+
+    <h2>Çalışanlarımıza Sunduğumuz İmkanlar</h2>
+
+    <ul>
+        <li>Eğitim ve gelişim programları</li>
+        <li>Kariyer planlama desteği</li>
+        <li>Modern çalışma ortamı</li>
+        <li>Takım çalışmasına dayalı kültür</li>
+        <li>Sosyal ve kültürel etkinlikler</li>
+    </ul>
+
+    <br>
+
+    <h2>Örnek Açık Pozisyonlar</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="YAZILIM GELİŞTİRÇİMİZ.jpg">
+            <h3>Yazılım Geliştirici</h3>
+            <p>Web ve mobil projelerde görev alacak ekip arkadaşları.</p>
+        </div>
+
+        <div class="card">
+            <img src="MAKİNE MÜHENDİSİ.webp">
+            <h3>Makine Mühendisi</h3>
+            <p>Üretim ve ürün geliştirme süreçlerinde görev alacak adaylar.</p>
+        </div>
+
+        <div class="card">
+            <img src="SATIŞ UZMANI.webp">
+            <h3>Satış Uzmanı</h3>
+            <p>Müşteri ilişkileri ve satış süreçlerini yönetecek ekip arkadaşları.</p>
+        </div>
+
+    </div>
+
+</div>
+<hr>
+
+<section class="hero">
+    <div>
+        <h1>iş Başvuru Formu</h1>
+        <p>hangi departmanda çalışmak istiyorsanız buradan bize ulaşın</p>
+    </div>
+</section>
+
+<form class="career-form">
+<label>Ad Soyad</label>
+<input type="text" placeholder="Adınızı ve soyadınızı giriniz" required>
+
+<label>E-posta</label>
+<input type="email" placeholder="ornek@mail.com" required>
+
+<label>Telefon</label>
+<input type="tel" placeholder="05XX XXX XX XX" required>
+
+<label>Başvurulan Pozisyon</label>
+<select required>
+    <option value="">Pozisyon Seçiniz</option>
+    <option>Yazılım Geliştirici</option>
+    <option>Makine Mühendisi</option>
+    <option>Satış Uzmanı</option>
+</select>
+
+<label>Eğitim Durumu</label>
+<select>
+    <option>Lise</option>
+    <option>Ön Lisans</option>
+    <option>Lisans</option>
+    <option>Yüksek Lisans</option>
+    <option>Doktora</option>
+</select>
+
+<label>Özgeçmiş Yükle</label>
+<input type="file">
+
+<label>Kendinizi Kısaca Tanıtın</label>
+<textarea rows="5" placeholder="Deneyimlerinizi ve yetkinliklerinizi yazınız"></textarea>
+
+<button type="submit">Başvuruyu Gönder</button>
+</form>
+
+
+<footer>
+    <p>© 2026 Arçelik A.Ş. Eğitim Amaçlı Tasarım</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
