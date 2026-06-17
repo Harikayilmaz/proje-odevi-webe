@@ -1,0 +1,307 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+.warning{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:20px;
+    background:red;
+    color:white;
+    text-align:center;
+    font-size:12px;
+    line-height:20px;
+    z-index:1000;
+}
+
+header{
+    background:#C0C0C0;
+    color:white;
+    margin-top:20px;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:20px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+}
+
+.menu-btn{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.hero{
+    background:url('../images/hero.jpg') center/cover;
+    height:320px;
+    color:rgba(0,0,0,.1);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 0;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+form{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+input,textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+button{
+    background:#0b5fa5;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#08477c;
+}
+
+@media(max-width:768px){
+
+    .nav-links{
+        display:none;
+        flex-direction:column;
+        background:#0b5fa5;
+        width:100%;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .navbar{
+        flex-direction:column;
+    }
+
+    .hero h1{
+        font-size:30px;
+    }
+}
+.career-form{
+max-width:700px;
+margin:40px auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.career-form label{
+font-weight:bold;
+}
+
+.career-form input,
+.career-form select,
+.career-form textarea{
+padding:12px;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:16px;
+}
+
+.career-form button{
+background:#e30613;
+color:white;
+border:none;
+padding:14px;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+}
+
+.career-form button:hover{
+opacity:0.9;
+}
+footer {
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+background-color: #222;
+color: white;
+text-align: center;
+padding: 15px;
+}
+.campaign-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.campaign-card{
+background:#fff;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 4px 15px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.campaign-card:hover{
+transform:translateY(-8px);
+}
+
+.campaign-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.campaign-card h3{
+text-align:center;
+color:#e30613;
+margin:15px 0;
+}
+
+.campaign-card p{
+padding:0 20px 20px;
+text-align:center;
+line-height:1.6;
+}
+
+.campaigns h2{
+text-align:center;
+color:#e30613;
+font-size:35px;
+}
+
+.campaign-text{
+text-align:center;
+max-width:800px;
+margin:15px auto;
+}
+.campaign-grid{
+width: 90%;
+max-width: 1200px;
+margin: 40px auto;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 30px;
+}
+
+.campaign-card{
+background: white;
+border-radius: 15px;
+overflow: hidden;
+box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+text-align: center;
+}
+
+.campaign-card img{
+width: 100%;
+height: 220px;
+object-fit: cover;
+}
+@media (max-width: 900px){
+.campaign-grid{
+grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width: 600px){
+.campaign-grid{
+grid-template-columns: 1fr;
+}
+}
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:28px;
+font-weight:bold;
+}
+
+.logo i{
+color:#e30613;
+font-size:30px;
+}
